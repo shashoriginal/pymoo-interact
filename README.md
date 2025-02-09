@@ -21,7 +21,7 @@ This command will:
 - Start the frontend development server
 - Open the application in your default browser
 
-The application will be available at:
+The application will be available at (Example):
 - Frontend UI: http://localhost:5175
 - Backend API: http://localhost:5000
 
