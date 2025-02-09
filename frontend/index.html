@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/optimization.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pym∞ - Interactive Optimization</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+      @font-face {
+        font-family: 'Uniform Rounded';
+        src: url('https://db.onlinewebfonts.com/t/42f8c8a70544a3ad3c19edb725c3bf27.eot');
+        src: url('https://db.onlinewebfonts.com/t/42f8c8a70544a3ad3c19edb725c3bf27.eot?#iefix') format('embedded-opentype'),
+             url('https://db.onlinewebfonts.com/t/42f8c8a70544a3ad3c19edb725c3bf27.woff2') format('woff2'),
+             url('https://db.onlinewebfonts.com/t/42f8c8a70544a3ad3c19edb725c3bf27.woff') format('woff'),
+             url('https://db.onlinewebfonts.com/t/42f8c8a70544a3ad3c19edb725c3bf27.ttf') format('truetype'),
+             url('https://db.onlinewebfonts.com/t/42f8c8a70544a3ad3c19edb725c3bf27.svg#Uniform Rounded') format('svg');
+      }
+      
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Roboto', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+      }
+
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #0a1929;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #2196f3;
+        border-radius: 5px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #1976d2;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
