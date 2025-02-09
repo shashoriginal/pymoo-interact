@@ -112,9 +112,11 @@ def install_dependencies():
     print("Activating virtual environment...")
     activate_venv()
     
-    print("Installing backend dependencies...")
+    print("Installing setuptools first...")
     try:
-        subprocess.run([get_pip_executable(), 'install', '-r', 'backend/requirements.txt'], check=True)
+        subprocess.run([get_python_executable(), '-m', 'pip', 'install', '--upgrade', 'pip', 'setuptools', 'wheel'], check=True)
+        print("Installing backend dependencies...")
+        subprocess.run([get_python_executable(), '-m', 'pip', 'install', '-r', 'backend/requirements.txt'], check=True)
     except subprocess.CalledProcessError as e:
         print(f"Error installing backend dependencies: {e}")
         sys.exit(1)
