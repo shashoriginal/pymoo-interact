@@ -1,7 +1,7 @@
 # Pymoo Interactive Optimizer
 
 <div align="center">
-  <img src="frontend/public/optimization.svg" alt="Pymoo Interactive Logo" width="150"/>
+  <img src="frontend/public/pymoo.png" alt="Pymoo Interactive Logo" width="150"/>
   <h3>Real-time Multi-Objective Optimization Visualization</h3>
   <p>An interactive web interface for the Pymoo optimization framework, enabling real-time visualization and analysis of multi-objective optimization problems.</p>
 </div>
